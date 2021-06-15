@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="controller.BoardCommandMapper"/>
-<fullyQualifiedTypeName name="command.BoardCommand"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="command.MemberCommand"/>
 <fullyQualifiedTypeName name="command.JoinCommand"/>
 <fullyQualifiedTypeName name="command.LoginPageCommand"/>
-<fullyQualifiedTypeName name="common.ModelAndView"/>
 <fullyQualifiedTypeName name="controller.MemberCommandMapper"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="command.BoardCommand"/>
+<fullyQualifiedTypeName name="db.util.DBConnector"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="command.InsertBoardCommand"/>
+<fullyQualifiedTypeName name="command.InsertBoardPageCommand"/>
+<fullyQualifiedTypeName name="command.SelectOneBoardCommand"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="common.ModelAndView"/>
+<fullyQualifiedTypeName name="command.DeleteBoardCommand"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="command.InsertReplyCommand"/>
+<fullyQualifiedTypeName name="dto.ReplyDTO"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="command.ToBoardCommand"/>
+<fullyQualifiedTypeName name="command.SelectListBoardCommand"/>
+<fullyQualifiedTypeName name="org.quartz.Scheduler"/>
+<fullyQualifiedTypeName name="org.quartz.JobDetail"/>
+<fullyQualifiedTypeName name="org.quartz.JobBuilder"/>
+<fullyQualifiedTypeName name="org.quartz.CronTrigger"/>
+<fullyQualifiedTypeName name="org.quartz.TriggerBuilder"/>
+<fullyQualifiedTypeName name="org.quartz.CronScheduleBuilder"/>
+<fullyQualifiedTypeName name="org.quartz.impl.StdSchedulerFactory"/>
+<fullyQualifiedTypeName name="org.quartz.SchedulerException"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="dto.BoardDTO"/>
+<fullyQualifiedTypeName name="dao.BoardDAO"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>
