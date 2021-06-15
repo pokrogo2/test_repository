@@ -1,0 +1,59 @@
+package controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import command.MemberCommand;
+import common.ModelAndView;
+
+/**
+ * Servlet implementation class MemberController
+ */
+@WebServlet("*.m")
+public class MemberController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public MemberController() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		request.setCharacterEncoding("utf-8");
+		response.setContentType("text/html; charset=utf-8");
+		
+		String [] arr = request.getRequestURI().split("/");
+		String cmd = arr[arr.length-1];
+		MemberCommand command = MemberCommandMapper.getInstance().getCommand(cmd);
+		ModelAndView mav = null;
+		if (command != null) {
+			mav = command.execute(request, response);
+		}
+		
+		// Command의 반환이 null인 경우
+		if (mav == null) {
+			return;  // doGet() 메소드 종료(Controller의 종료: Command의 null 반환은 Command가 다 처리하고 이동할 페이지가 없음을 의미)
+		}
+		
+		// 페이지 이동
+		if (mav.isRedirect()) {
+			response.sendRedirect(mav.getView());
+		} else {
+			request.getRequestDispatcher(mav.getView()).forward(request, response);
+		}
+	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+}

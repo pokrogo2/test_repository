@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\Owner\Desktop\exam_eclipse\exam_model2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3007460647.index
+\ex_model2\src
+C:\Users\Owner\Desktop\exam_eclipse\exam_model2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2775576597.index
+\ex_model2\src
+C:\Users\Owner\Desktop\exam_eclipse\exam_model2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4187792573.index
+\ex_model2\src
